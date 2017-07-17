@@ -1,6 +1,6 @@
 //default sharpoint css - REMOVE BEFORE UPLOADING
-@import 'sharepoint_core_15';
-@import 'sharepoint_search_15';
+//@import 'sharepoint_core_15';
+//@import 'sharepoint_search_15';
 
 // available variables to change the brand colours as required
 // masterhead.scss
@@ -174,139 +174,49 @@ $input-border-color:$grey;
 //@import 'mainMenuSubsites'; //subsites only
 //@import 'socialMedia'; //subsites only
 //@import 'sideNavigation'; //subsites only
-@import 'blocklinks'; //subsites only
-@import 'contentLink'; //subsites only
-@import 'contentAssets'; //subsites only
-@import 'polaroids'; //subsites only
+//@import 'blocklinks'; //subsites only
+//@import 'contentLink'; //subsites only
+//@import 'contentAssets'; //subsites only
+//@import 'polaroids'; //subsites only
 @import 'iconLinks'; //subsites only
-@import 'heroBanner'; //subsites only
-@import 'promoListwebpart'; //subsites only
-@import 'promoGroup'; //subsites only
-@import 'sectionSubsite'; //subsites only
-@import 'promo'; //subsites only
-@import 'carousel'; //subsites only
+//@import 'heroBanner'; //subsites only
+//@import 'promoListwebpart'; //subsites only
+//@import 'promoGroup'; //subsites only
+//@import 'sectionSubsite'; //subsites only
+//@import 'promo'; //subsites only
+//@import 'carousel'; //subsites only
 //@import 'eventsWebparts'; //subsites only
 @import 'breadcrumb';
-@import 'accordion';
+//@import 'accordion';
 @import 'alerts';
-@import 'news';
-@import 'groupPromo';
-@import 'docList';
-@import 'blockQuote';
+//@import 'news';
+//@import 'groupPromo';
+//@import 'docList';
+//@import 'blockQuote';
 @import 'accessibility';
-@import 'mega-promo';
+//@import 'mega-promo';
 @import 'buttons';
 @import 'browser-alert';
 @import 'typography-lcc';
 @import 'tables';
 @import 'form_elements';
-@import 'images';
+//@import 'images';
 @import 'webchat';
-@import 'description_list_accessible';
+//@import 'description_list_accessible';
 @import 'phase-banner';
-@import 'side-nav';
-@import 'pagination';
-@import 'part-nav';
-@import 'sub-section-nav';
+//@import 'side-nav';
+//@import 'pagination';
+//@import 'part-nav';
+//@import 'sub-section-nav';
 @import 'atoz';
 @import 'lcc_breadcrumb';
-
-//CUSTOM SASS FILES FOR STYLE GUIDE
-@import 'prism';
-@import 'styleguide_digital';
-@import 'styleguide_code-example';
-@import 'styleguide_sticky';
-@import 'styleguide_swatch';
-
-//CUSTOM SASS FILES FOR LEEDS.GOV.UK
-@import 'easy-autocomplete';
-@import 'search-results';
-@import 'panel';
-@import 'where-i-live';
-@import 'open-data';
-//@import 'hero-lcc-sharepoint';
-@import 'lcc_hero';
-@import 'lcc_accordion';
-@import 'lcc_group-promo';
-@import 'lcc_mega-promo';
-@import 'lcc_doclist';
-@import 'lcc_news';
-@import 'ie-support';
-@import 'sharepoint_2010_style_fallback';
 @import 'lcc_search';
 
 //in front end toolkit
 @import 'lcc_footer';
 @import 'lcc_header';
 
-
-//CUSTOM STYLES FOR LEEDS.GOV.UK
-
 //site background
 html{
     background-color:$blue;
-}
-
-//bootsrap override
-.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-//hr
-hr{
-  border-color:rgba( $border-color, .5 );
-}
-
-//Rm quick add to be removed when we consolidate group promo styling
-.sub-section-heading {
-    border-bottom: 1px solid #DCDEE1;
-    margin: 0 0 20px;
-    padding-bottom: 10px;
-}
-
-//buttons
-.btn-primary{
-    border-bottom:2px solid darken($primary-button-background-color,5%);
-}
-.btn-secondary{
-    border-bottom:2px solid darken($secondary-button-background-color,5%);
-}
-
-.btn{
-    font-weight:400;
-
-    &:focus{
-        border-color:$focus-color !important;
-    }
-}
-
-//back to top (focus fix)
-.cd-top:focus{
-    background:$focus-color url("images/cd-top-arrow.svg") no-repeat center 50% !important;
-    opacity:1;
-}
-
-//video container
-.media-container{
-    margin:30px 0;
-}
-
-//clear
-.clear{
-    padding:0 !important;
-}
-
-//self service custom
-.header-actions{
-    position:absolute;
-    top:-110px;
-    right:15px;
-
-    @media (max-width: 641px){
-        position:relative;
-        top:auto;
-        right:auto;
-        margin-bottom:20px;
-    }
 }

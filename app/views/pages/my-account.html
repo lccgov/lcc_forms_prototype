@@ -1,54 +1,66 @@
-{% extends "layout_multi_sections_home-lcc.html" %}
+{% extends "layout_multi_sections-lcc.html" %}
 
 {% block page_title %}
-	Home Page
+	My Account
 {% endblock %}
 
 
-{% block css_register %}
-    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
-{% endblock %}
+  {% block css_register %}
+         <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+   {% endblock %}
 
-<!-- TEMPORARY FIX TO ALLOW SEARCH AUTOFILL TO WORK -->
-{% block additional_page_scripts %}
-    <script src="{{ asset_path }}javascripts/jquery.easy-autocomplete.min.js"></script>
-    <script src="/public/javascripts/application.js?1.1.60" type="text/javascript"></script>  
-{% endblock %}  
  
 
 {% block header %}
-{% endblock %}
+    My Account
+{% endblock%}
 
  {% block main_nav %}
  {% endblock %}
 
 
 
-{% block sectionOneTop %}
-
+ {% block sectionOneTop %}
 {% endblock %} 
 
 {% block sectionOneFull%}
 {% endblock %}
 
-{% block sectionOneFullBottom %}
-
-{% endblock %}
-
 
  {% block breadcrumb %}
+<ul>
+    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
+        <a href="/index.html">Home</a>
+        <ul class="">
+            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>My Account</li>
+        </ul>
+    </li>
+</ul>
  {% endblock %}
 
 {% block sectionOneContent %}
+    
 {% endblock %}
 
 {% block pageContent %}
-<div>
-    <h2 class="heading-xlarge">Forms prototype</h2>
-</div>
+
 {% endblock %}
 
-
+{% block sectionOneFullBottom %}
+<h2 class="heading-large top">Choose the service you need</h2>
+<ul class="list list-nav">
+    <li><a href="#">Council Tax</a></li>
+    <li><a href="#">Tenants</a></li>
+    <li><a href="#">Housing Benefits</a></li>
+    <li><a href="#">Business rates</a></li>
+    <li><a href="#">Parking permits</a></li>
+</ul>
+<h3 class="heading-medium top">Other accounts</h2>
+<ul class="list list-nav">
+    <li><a href="#">Libraries</a></li>
+    <li><a href="#">Leeds City Council jobs</a></li>
+</ul>
+{% endblock %}
 
 {% block sectionOneRightHandColumn %}
 {% endblock %}
@@ -111,6 +123,7 @@
 {% endblock %} 
 
 {% block sectionFourFull%}
+
 {% endblock %}
 
 {% block sectionFourContent %}
@@ -131,8 +144,8 @@
 
 
 {% block sectionFiveTop %}
-
-{% endblock %} 
+{% include "includes/components/atoz.html" %}
+{% endblock %}  
 
 {% block sectionFiveFull%}
 {% endblock %}
@@ -156,6 +169,6 @@
   {% block footer_nav %}
  {% endblock %}
 
- {% block reuserblecontent_footer %}
+  {% block reuserblecontent_footer %}
      {% include "includes/re-userble-content-footer.html" %}
  {% endblock %}

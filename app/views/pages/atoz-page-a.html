@@ -1,38 +1,35 @@
-{% extends "layout_multi_sections_home-lcc.html" %}
+{% extends "layout_multi_sections-lcc.html" %}
 
 {% block page_title %}
-	Home Page
+	A to Z Page Example
 {% endblock %}
 
 
-{% block css_register %}
-    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
-{% endblock %}
+  {% block css_register %}
+         <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+   {% endblock %}
 
-<!-- TEMPORARY FIX TO ALLOW SEARCH AUTOFILL TO WORK -->
-{% block additional_page_scripts %}
-    <script src="{{ asset_path }}javascripts/jquery.easy-autocomplete.min.js"></script>
-    <script src="/public/javascripts/application.js?1.1.60" type="text/javascript"></script>  
-{% endblock %}  
  
 
 {% block header %}
-{% endblock %}
+    A to Z of Services
+{% endblock%}
 
  {% block main_nav %}
  {% endblock %}
 
 
 
-{% block sectionOneTop %}
-
+ {% block sectionOneTop %}
+ {% include "includes/components/atoz.html" %}
+ <style>
+     .atoz:first-child{
+        margin-top:0;
+     }
+ </style>
 {% endblock %} 
 
 {% block sectionOneFull%}
-{% endblock %}
-
-{% block sectionOneFullBottom %}
-
 {% endblock %}
 
 
@@ -40,15 +37,16 @@
  {% endblock %}
 
 {% block sectionOneContent %}
+    
 {% endblock %}
 
 {% block pageContent %}
-<div>
-    <h2 class="heading-xlarge">Forms prototype</h2>
-</div>
+
 {% endblock %}
 
-
+{% block sectionOneFullBottom %}
+    {% include "includes/components/atoz-list-a.html" %}
+{% endblock %}
 
 {% block sectionOneRightHandColumn %}
 {% endblock %}
@@ -111,6 +109,7 @@
 {% endblock %} 
 
 {% block sectionFourFull%}
+
 {% endblock %}
 
 {% block sectionFourContent %}
@@ -131,8 +130,8 @@
 
 
 {% block sectionFiveTop %}
-
-{% endblock %} 
+{% include "includes/components/atoz.html" %}
+{% endblock %}  
 
 {% block sectionFiveFull%}
 {% endblock %}
@@ -156,6 +155,6 @@
   {% block footer_nav %}
  {% endblock %}
 
- {% block reuserblecontent_footer %}
+  {% block reuserblecontent_footer %}
      {% include "includes/re-userble-content-footer.html" %}
  {% endblock %}
