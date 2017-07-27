@@ -1,3 +1,6 @@
+//google fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:400,700'); 
+
 //default sharpoint css - REMOVE BEFORE UPLOADING
 //@import 'sharepoint_core_15';
 //@import 'sharepoint_search_15';
@@ -39,15 +42,19 @@ $base-link-visited-color:#4C2C92;
 $secondary-link-color:$dark-blue;
 $secondary-font-color:$dark-grey;
 $border-color:$light-grey;
-$panel-color:darken($lighter-grey,3%);
 $brand-color:$blue;
 $button-color:$green;
 $button-hover-color:lighten($button-color,5%);
 $focus-color:$yellow;
 $base-container-width:1400px ;
 //$btn-background-color:green ;
-$font-primary:proxima-nova, sans-serif; // main font
-$font-secondary:proxima-nova, sans-serif; // secondary font
+$font-primary:'Open Sans', sans-serif; // main font
+$font-secondary:'Montserrat', sans-serif; // secondary font used for headings
+//$header-font-weight: 600;
+
+//panel colours
+$panel-color:#E5F1F5;
+$panel-color-secondary:#DCDEE1;
 
 //global used on all partials to get a uniform spacing between elements
 //$base-margin-bottom:1.875em ;
@@ -170,9 +177,9 @@ $input-border-color:$grey;
 //FRONT END TOOLKIT SASS FILES
 
 //available sass files please un-comment out as required
-@import 'sharepointOverides';
+//@import 'sharepointOverides';
 //@import 'mainMenuSubsites'; //subsites only
-//@import 'socialMedia'; //subsites only
+@import 'socialMedia'; //subsites only
 //@import 'sideNavigation'; //subsites only
 //@import 'blocklinks'; //subsites only
 //@import 'contentLink'; //subsites only
@@ -181,7 +188,7 @@ $input-border-color:$grey;
 @import 'iconLinks'; //subsites only
 //@import 'heroBanner'; //subsites only
 //@import 'promoListwebpart'; //subsites only
-//@import 'promoGroup'; //subsites only
+@import 'promoGroup'; //subsites only
 //@import 'sectionSubsite'; //subsites only
 //@import 'promo'; //subsites only
 //@import 'carousel'; //subsites only
