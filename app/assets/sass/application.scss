@@ -178,7 +178,7 @@ $input-border-color:$grey;
 
 //available sass files please un-comment out as required
 //@import 'sharepointOverides';
-//@import 'mainMenuSubsites'; //subsites only
+@import 'mainMenuSubsites'; //subsites only
 @import 'socialMedia'; //subsites only
 //@import 'sideNavigation'; //subsites only
 //@import 'blocklinks'; //subsites only
@@ -226,4 +226,47 @@ $input-border-color:$grey;
 //site background
 html{
     background-color:$blue;
+}
+
+//custom style for form 
+
+//header
+.user-name{
+    color:white;
+    padding:20px 0;
+    margin:0;
+
+    @media (max-width: 767px){
+        padding:10px 0;
+    }
+
+    @media (max-width: 641px){
+        padding:13px 0;
+    }
+}
+
+//footer
+footer.main{
+
+    .footerGlobal .socialBookmarks {
+        @media (max-width: 500px){
+            padding-top: 0px;
+        }
+    }
+}
+
+//buttons
+.btn-primary{
+    border-bottom:2px solid darken($primary-button-background-color,5%);
+}
+.btn-secondary{
+    border-bottom:2px solid darken($secondary-button-background-color,5%);
+}
+
+.btn{
+    font-weight:400;
+
+    &:focus{
+        border-color:$focus-color !important;
+    }
 }
