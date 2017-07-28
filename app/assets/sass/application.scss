@@ -194,14 +194,14 @@ $input-border-color:$grey;
 //@import 'carousel'; //subsites only
 //@import 'eventsWebparts'; //subsites only
 @import 'breadcrumb';
-//@import 'accordion';
+@import 'accordion';
 @import 'alerts';
 //@import 'news';
-//@import 'groupPromo';
-//@import 'docList';
+@import 'groupPromo';
+@import 'docList';
 //@import 'blockQuote';
 @import 'accessibility';
-//@import 'mega-promo';
+@import 'mega-promo';
 @import 'buttons';
 @import 'browser-alert';
 @import 'typography-lcc';
@@ -222,6 +222,8 @@ $input-border-color:$grey;
 //in front end toolkit
 @import 'lcc_footer';
 @import 'lcc_header';
+
+@import 'lcc_base_styles';
 
 //site background
 html{
