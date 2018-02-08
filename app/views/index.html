@@ -1,162 +1,26 @@
-{% extends "layout_multi_sections_home-lcc.html" %}
+{% extends "layout_multi_sections_home-forms.html" %}
 
 {% block page_title %}
 	LCC Forms Prototype
 {% endblock %}
 
-
 {% block css_register %}
     <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
 {% endblock %}
 
-<!-- TEMPORARY FIX TO ALLOW SEARCH AUTOFILL TO WORK -->
 {% block additional_page_scripts %}
-    <script src="{{ asset_path }}javascripts/jquery.easy-autocomplete.min.js"></script>
     <script src="/public/javascripts/application.js?1.1.60" type="text/javascript"></script>  
 {% endblock %}  
- 
-
-{% block header %}
-{% endblock %}
-
- {% block main_nav %}
- {% endblock %}
-
-
-
-{% block sectionOneTop %}
-
-{% endblock %} 
-
-{% block sectionOneFull%}
-{% endblock %}
-
-{% block sectionOneFullBottom %}
-
-{% endblock %}
-
-
- {% block breadcrumb %}
- {% endblock %}
-
-{% block sectionOneContent %}
-{% endblock %}
 
 {% block pageContent %}
-    <h2 class="heading-xlarge">Forms prototype</h2>
+    <h1 class="heading-xlarge">Service prototypes</h2>
 
-    <ul class="list list-nav">
-        <li><a href="pages/form-example.html">Form example</a></li>
-        <li><a rel="external" href="https://lcc-prototype-kit.herokuapp.com/design-patterns-pages/design-elements/form-elements">Form elements style guide</a></li>
-        <li><a rel="external" href="https://lcc-prototype-kit.herokuapp.com/pages-lcc/form-elements-errors">Form error handling style guide</a></li>
+    <ul class="list list-bullet">
+        <li><a href="forms/form-example/start-page">Service example</a></li>
+        <li><a href="forms/report-a-pothole-or-damaged-road-surface/start-page">Report a pothole or damaged road surface</a></li>
+        <li><a href="forms/request-a-new-or-replacement-bin/start-page">Request a new or replacement bin</a></li>
     </ul>
 {% endblock %}
-
-{% block sectionOneRightHandColumn %}
-{% endblock %}
-
-{% block sectionOneThirdCol1 %}
- {% endblock %}
-
- {% block sectionOneThirdCol2 %}
- {% endblock %}
-
-{% block sectionOneThirdCol3 %}
- {% endblock %}
-
-
-{% block sectionTwoTop %}
-{% endblock %} 
-
-{% block sectionTwoFull%} 
-{% endblock %}
-
-{% block sectionTwoContent %}
-{% endblock %}
-
-{% block sectionTwoRightHandColumn %}
-{% endblock %}
-
-{% block sectionTwoThirdCol1 %}
- {% endblock %}
-
- {% block sectionTwoThirdCol2 %}
- {% endblock %}
-
-{% block sectionTwoThirdCol3 %}
- {% endblock %}
-
-
-{% block sectionThreeTop %}
-{% endblock %} 
-
-{% block sectionThreeFull%}
-{% endblock %}
-
-{% block sectionThreeContent %}
-{% endblock %}
-
-{% block sectionThreeRightHandColumn %}
-{% endblock %}
-
-{% block sectionThreeThirdCol1 %}
- {% endblock %}
-
- {% block sectionThreeThirdCol2 %}
- {% endblock %}
-
-{% block sectionThreeThirdCol3 %}
- {% endblock %}
-
-
-{% block sectionFourTop %}
-{% endblock %} 
-
-{% block sectionFourFull%}
-{% endblock %}
-
-{% block sectionFourContent %}
-{% endblock %}
-
-{% block sectionFourRightHandColumn %}
-{% endblock %}
-
-{% block sectionFourThirdCol1 %}
- {% endblock %}
-
- {% block sectionFourThirdCol2 %}
- {% endblock %}
-
-{% block sectionFourThirdCol3 %}
- {% endblock %}
-
-
-
-{% block sectionFiveTop %}
-
-{% endblock %} 
-
-{% block sectionFiveFull%}
-{% endblock %}
-
-{% block sectionFiveContent %}
-{% endblock %}
-
-{% block sectionFiveRightHandColumn %}
-{% endblock %}
-
-{% block sectionFiveThirdCol1 %}
- {% endblock %}
-
- {% block sectionFiveThirdCol2 %}
-
- {% endblock %}
-
-{% block sectionFiveThirdCol3 %}
- {% endblock %}
-
-  {% block footer_nav %}
- {% endblock %}
 
  {% block reuserblecontent_footer %}
      {% include "includes/re-userble-content-footer.html" %}

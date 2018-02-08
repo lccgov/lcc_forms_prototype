@@ -1,19 +1,9 @@
-//google fonts
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:400,700'); 
+//@import 'sharepoint'; //default sharpoint css - REMOVE BEFORE UPLOADING
 
-//default sharpoint css - REMOVE BEFORE UPLOADING
-//@import 'sharepoint_core_15';
-//@import 'sharepoint_search_15';
+//google fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:400,700');
 
 // available variables to change the brand colours as required
-// masterhead.scss
-
-//$head-background: #ffffff;
-
-//mainMenu.scss -- responsive icons color
-//$menu-link-color:#337ab7;
-
-//base.scss
 
 //base colours
 $blue:#007299;
@@ -31,71 +21,68 @@ $lighter-grey:#F6F7FA;
 $white:#FFFFFF;
 $yellow:#FFBF47;
 $dark-yellow:#FAA300;
-
+$red:#c0392b;
 //$base-background-color:#fff;
-$base-font-size:16px;
-$base-font-color:$black;
-$header-font-color:$black;
-$base-link-color:$blue;
-$base-link-hover-color:$light-blue;
-$base-link-visited-color:#4C2C92;
-$secondary-link-color:$dark-blue;
-$secondary-font-color:$dark-grey;
 $border-color:$light-grey;
 $brand-color:$blue;
 $button-color:$green;
 $button-hover-color:lighten($button-color,5%);
 $focus-color:$yellow;
-$base-container-width:1400px ;
+$base-container-width:1280px;
 //$btn-background-color:green ;
-$font-primary:'Open Sans', sans-serif; // main font
+$alert-color:$red;
+
+//typography
+$font-primary:'Open Sans',
+sans-serif; // main font
 $font-secondary:'Montserrat', sans-serif; // secondary font used for headings
-//$header-font-weight: 600;
+//$base-font-size:16px !default;
+//$base-font-size-desktop:19px !default;
+$base-line-height: 1.4;
+$base-font-color:$black;
+$header-font-color:$black;
+$secondary-font-color:$dark-grey;
+$header-font-weight: 700;
+//$base-font-weight: 400 !default;
+$base-link-color:$blue;
+$base-link-hover-color:$light-blue;
+$base-link-visited-color:#4C2C92;
+$secondary-link-color:$dark-blue;
 
 //panel colours
 $panel-color:#E5F1F5;
 $panel-color-secondary:#DCDEE1;
-
+//$panel-alt-background-color:#003F55;
+//$panel-alt-color:white;
 //global used on all partials to get a uniform spacing between elements
 //$base-margin-bottom:1.875em ;
-
 //headerTop
 //$search-link-background:#F3F3F4 ;
 //$search-link:#333 ;
-
 // mainNav.scss
-$main-nav-background:lighten( $brand-color, 3% );
+$main-nav-background:lighten( $brand-color,3%);
 //$main-nav-link:#fff ;
-
 //footer.scss
 //$footer-font-color:#fff ;
 //$footer-nav-selected-link:#133E8D ;
-
 //sectionSubsite.scss - socialamedia.scss
 //$section-Background:#efefef ;
-
 //socialamedia.scss
 //$social-link-color:#337ab7 ;
-
 //sideNavigation.scss
 //$side-nav-active-background:#133E8D ;
-
 //carousel.scss
 //$carousel-active-background:#000 ;
 //$carousel-indicators-active-background:#ccc ;
 //$carousel-caption-background: rgba(0,0,0,0.6) ;
 //$carousel-caption-font-color:#fff ;
-
-
 //blocklinks.scss
-
 //$block-link-back:#f6f6f6 ;
 //$block-link-back-hover:#3380A4 ;
 //$promo-group-border:1px solid #fff ; 
 //$promo-group-background:#EDF2F5 ; 
 //$promo-group-li-background:#EDF2F5 ;
 //$promo-group-link-color:#216486 ;
-
 //promolist webpart
 //$link-font-color:#fff;
 //$span-info-color:#133E8D;
@@ -108,7 +95,6 @@ $main-nav-background:lighten( $brand-color, 3% );
 //$contentFontColor:#333;
 //$content-arrow-color:#133E8D;
 //$content-border-color:#ddd;
-
 //section backgrounds
 $sectionHeader-background-color:$brand-color;
 $sectionOne-background-color:#fff;
@@ -116,28 +102,22 @@ $sectionTwo-background-color:#fff;
 $sectionThree-background-color:#fff;
 $sectionFour-background-color:#fff;
 $sectionFive-background-color:#fff;
-
 //iconlinks
 //$iconLinkIconColor:#FFC82E;
-
 //heroBanner
 //$heroFontBackground:rgba(0, 0, 0, 0.5); 
 //$heroFontcolor:#fff; 
-
 //news
 //$news-button-background: #3498DB ;
-$news-pod-back:#ffffff ;
+$news-pod-back:#ffffff;
 $news-pod-border-color:#ddd;
-
 //accordion
-//$accordion-color:green;
-//$accordion-border-color:#ECF0F1;
-
+$accordion-color:$base-link-color;
+$accordion-border-color:$border-color;
 //Block quote
 // $blockquoteBorderColor:#bbcada ;
 // $blockquoteQuoteColor:#333;
 // $blockquoteQuoteFooterColor:#000;
-
 //highlighted box in content assets
 //$highlighted-background-color:#333 !default;
 //$highlighted-font-color:#fff !default;
@@ -149,7 +129,7 @@ $promo-background-color:$lighter-grey;
 $promo-arrow-color:#9DA5B2;
 $promo-header-color:$blue;
 $promo-secondary-color:$black;
-$promo-highlight-background-color:$dark-blue;
+$promo-highlight-background-color:$blue;
 $promo-highlight-color:$white;
 
 //button colours
@@ -170,146 +150,72 @@ $group-promo-arrow-color: $grey;
 $input-color:$black;
 $input-border-color:$grey;
 
-@import 'mixins';
-@import 'variables';
-@import 'brandColors';
+//back to top
+//$back-top-color:white;
+//$back-top-hover-color:white;
+//$back-top-background:black;
+//$back-top-hover-background:grey;
 
-//FRONT END TOOLKIT SASS FILES
+//phase banner
+//$phase-banner-stage-background:#007299 !default;
+//$phase-banner-stage-color:white !default;
 
-//available sass files please un-comment out as required
-//@import 'sharepointOverides';
-//@import 'mainMenuSubsites'; //subsites only
-@import 'socialMedia'; //subsites only
-//@import 'sideNavigation'; //subsites only
-//@import 'blocklinks'; //subsites only
-//@import 'contentLink'; //subsites only
-//@import 'contentAssets'; //subsites only
-//@import 'polaroids'; //subsites only
-@import 'iconLinks'; //subsites only
-//@import 'heroBanner'; //subsites only
-//@import 'promoListwebpart'; //subsites only
-@import 'promoGroup'; //subsites only
-//@import 'sectionSubsite'; //subsites only
-//@import 'promo'; //subsites only
-//@import 'carousel'; //subsites only
-//@import 'eventsWebparts'; //subsites only
-@import 'breadcrumb';
+//- FRONT END TOOLKIT
+@import 'url-helper';
+@import 'base';
+@import 'brand-colors';
+//@import '2010-typography-overrides';
 @import 'accordion';
-@import 'alerts';
-//@import 'news';
-@import 'groupPromo';
-@import 'docList';
-//@import 'blockQuote';
-@import 'accessibility';
+@import 'accordion-aria';
+//@import 'a-to-z';
+//@import 'block-links'; //subsite only
+//@import 'block-quote'; //subsite only
+//@import 'carousel';
+//@import 'content-assets'; //subsite only
+//@import 'content-link'; //subsite only
+@import 'description-list';
+@import 'doc-list';
+//@import 'events-search-results';
+//@import 'events-webparts';
+@import 'group-promo';
+//@import 'hero-banner';
+//@import 'hero-banner-overlay'; //needs aligning with hero-bnner - RM
+//@import 'icon-links';
+//@import 'lcc-hero';
 @import 'mega-promo';
-@import 'buttons';
-@import 'browser-alert';
-@import 'typography-lcc';
-@import 'tables';
-@import 'form_elements';
-@import 'images';
-@import 'webchat';
-@import 'description_list_accessible';
+//@import 'news'; //subsites only
+//@import 'open-data'; //is it leeds.gov.uk specific? - does it need re-naming- DH
+//@import 'journey-page';
 @import 'phase-banner';
-@import 'side-nav';
-@import 'pagination';
-@import 'part-nav';
+//@import 'polaroids'; //subsite only
+//@import 'promo'; //subsites only
+//@import 'promo-list-webpart'; //subsite only
+//@import 'section-subsite'; //subsite only
+//@import 'sharepoint-overrides';
+//@import 'sharepoint-search-results';
+@import 'side-nav'; //needs aligning with side-navigation - DH & RM
+//@import 'side-navigation'; //needs aligning with side-nav - DH & RM
 @import 'sub-section-nav';
-@import 'atoz';
-@import 'lcc_breadcrumb';
-@import 'lcc_search';
+//@import 'webchat';
 
-//in front end toolkit
-@import 'lcc_footer';
-@import 'lcc_header';
+//-PROJECT SPECIFIC
+//@import 'styleguide';//not needed for live site
+//@import 'sticky-nav';//not currently needed for live site
+//@import 'modern-gov'; //not needed for live site
 
-@import 'lcc_base_styles';
+//@import 'leedsgov-specific';
+@import 'leedsgov-overrides';
+//@import 'where-i-live'; //needs fine tuning and adding to toolkit - DH
+
+@import 'lcc-header'; //a part of the toolkit but needs to be at end
+
+//@import 'table-saw'; //testing out new methods for tables
 
 //site background
-html{
-    background-color:$blue;
+html {
+    background-color: $blue;
 }
 
-//custom style for form 
-
-//footer
-footer.main{
-
-    .footerGlobal .socialBookmarks {
-        @media (max-width: 500px){
-            padding-top: 0px;
-        }
-    }
-}
-
-//buttons
-.btn-primary{
-    border-bottom:2px solid darken($primary-button-background-color,5%);
-}
-.btn-secondary{
-    border-bottom:2px solid darken($secondary-button-background-color,5%);
-}
-
-.btn{
-    font-weight:400;
-
-    &:focus{
-        border-color:$focus-color !important;
-    }
-}
-
-//nav
-.main-nav ul li {
-    a{
-      font-size:18px;
-      padding:12px;
-      text-decoration:none;
-    }
-}
-
-@media (max-width: 767px){
-    .main-nav {
-        position: relative;
-        left: auto;
-        top: auto;
-        z-index: 1;
-        min-height: 0;
-        width: 100%;
-
-        .container-fluid {
-            padding:8px 15px;
-
-            ul li {
-                border-top: 0;
-                margin: 0px;
-                padding-top: 0 !important;
-                width: auto;
-
-                a{
-                    font-size:14px;
-                    padding:0 8px;
-                }
-            }
-        }
-    }
-}
-
-//header
-.user-name{
-    color:white;
-    padding:20px 0;
-    margin:0;
-
-    @media (max-width: 767px){
-        padding:10px 0;
-    }
-
-    @media (max-width: 641px){
-        padding:13px 0;
-    }
-
-    @media (max-width: 400px){
-        display:block;
-        padding-top:0 !important;
-    }
+.sectionHeader .container-fluid .header-wrapper .header-logo{
+    z-index:2;
 }
