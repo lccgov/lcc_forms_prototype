@@ -1,0 +1,70 @@
+{% extends "layout_multi_sections-forms.html" %}
+
+{% block page_title %}
+	What is your position - Leeds City Council
+{% endblock %}
+
+{% block css_register %}
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block service_start_page %}
+    /forms/phrc/start-page
+{% endblock %}
+
+{% block service_name %}
+    Register to join the Public Health Resource Centre
+{% endblock %}
+
+{% block form_progress %}
+{% endblock%}
+ 
+{% block header %}
+    Your position
+{% endblock%}
+
+{% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+<a href="/forms/phrc/start-page" class="link-back form-back">Back</a>
+{% endblock %}
+
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% block sectionOneContent %}
+<form>
+    <div class="form-group">
+        <fieldset>
+            <legend class="sr-only">What is your position?</legend>
+            <label class="form-label form-label-bold" for="select-box">What is your position? <span class="form-hint">Please select the option that describes you best</span></label>
+            <select class="form-control" id="select-box" name="select-box">
+                <option>Please select...</option>
+                <option>Community & third sector</option>
+                <option>Education staff - College / university</option>
+                <option>Education staff - Secondary</option>
+                <option>Education staff - Private</option>
+                <option>Professional</option>                
+                <option>Student</option>                
+                <option>Government department</option>                
+                <option>Local authority</option>                
+                <option>NHS</option>                
+                <option>Private sector</option>
+                <option>Volunteer</option>
+            </select>
+        </fieldset>
+    </div>
+
+
+    <a href="/forms/phrc/question-2" class="btn btn-primary">Continue</a>
+</form>
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+{% endblock %}
+
+  {% block reusablecontent_footer %}
+     {% include "includes/footer-forms.html" %}
+ {% endblock %}

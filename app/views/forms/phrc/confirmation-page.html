@@ -1,7 +1,7 @@
 {% extends "layout_multi_sections-forms.html" %}
 
 {% block page_title %}
-	Report a pothole or damaged road surface - Confirmation page
+	Form example - Confirmation page
 {% endblock %}
 
 {% block css_register %}
@@ -9,11 +9,11 @@
 {% endblock %}
 
 {% block service_start_page %}
-    /forms/report-a-pothole-or-damaged-road-surface/start-page
+    /forms/phrc/start-page
 {% endblock %}
 
 {% block service_name %}
-    Report a pothole or damaged road surface
+    Register to join the Public Health Resource Centre
 {% endblock %}
 
 {% block form_progress %}
@@ -33,18 +33,17 @@
 {% endblock %}
 
 {% block sectionOneContent %}
+<h1>Form complete</h1>
+<p>Thank you for submitting your form. We will contact you shortly.</p>
+
 <div class="panel panel-confirmation">
-    <h1>Application complete</h1>
     <p class="font-large">Your reference number is<br> 
-    <strong>DH8NTER</strong></p>
+    <strong>ABCDE10</strong></p>
 </div>
-<div class="text">
-    <p>We have sent you a confirmation email.</p>
-    <h2>What happens next</h2>
-    <p>We've sent your application to Leeds City Council Head Office.</p>     
-    <p>They will contact you either to confirm your registration, or to ask for more information.</p>   
-    <p><a href="#">What did you think of this service?</a> (takes 30 seconds)</p>
-</div>
+
+<p>Go back to <a href="https://www.leeds.gov.uk">leeds.gov.uk</a></p>
+
+
 {% endblock %}
 
 {% block sectionOneRightHandColumn %}

@@ -634,7 +634,21 @@ ol {
   padding: 0;
   margin-top: 0;
   margin-bottom: 15px;
-  display: inline-block;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex-direction: column;
+  -moz-box-flex-direction: column;
+  -ms-flex-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex-wrap: wrap;
+  -moz-box-flex-wrap: wrap;
+  -ms-flex-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%; }
   @media (min-width: 641px) {
     .list {
@@ -2897,12 +2911,14 @@ footer.main {
     color: #fff; }
 
 .logo-footer span {
-  background: url("<%= asset_path('lcc-logo-white-01.svg') %>") center center no-repeat;
-  background-size: 100% 100%;
-  width: 150px;
-  height: 45px;
+  background: url("../images/lcc-logo-white-01.svg") center center/100% 100% no-repeat;
   display: block;
-  margin: 1.875em 0; }
+  margin: 0 0 1.25em 0;
+  width: 220px;
+  height: 66px; }
+  @media (max-width: 500px) {
+    .logo-footer span {
+      margin: 0 0 20px; } }
 
 .socialBookmarks {
   background: #F6F7FA;
@@ -2984,7 +3000,21 @@ footer.main {
       padding: 0;
       margin-top: 0;
       margin-bottom: 15px;
-      display: inline-block;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-flex-direction: column;
+      -moz-box-flex-direction: column;
+      -ms-flex-flex-direction: column;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-flex-wrap: wrap;
+      -moz-box-flex-wrap: wrap;
+      -ms-flex-flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
       width: 100%; }
       @media (min-width: 641px) {
         .alert .alertInner ul,
@@ -4935,15 +4965,6 @@ footer.main .footerGlobal {
             display: none; } }
       footer.main .footerGlobal nav ul li:last-child:after {
         display: none; }
-  footer.main .footerGlobal .logo-footer span,
-  footer.main .footerGlobal .logo-footer img {
-    margin: 0 0 1.25em 0;
-    width: 220px;
-    height: 66px; }
-    @media (max-width: 500px) {
-      footer.main .footerGlobal .logo-footer span,
-      footer.main .footerGlobal .logo-footer img {
-        margin: 0 0 20px; } }
   footer.main .footerGlobal .socialBookmarks {
     float: right;
     padding-top: 25px;

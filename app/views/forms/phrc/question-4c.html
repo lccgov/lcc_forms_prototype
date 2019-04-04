@@ -1,0 +1,58 @@
+{% extends "layout_multi_sections-forms.html" %}
+
+{% block page_title %}
+	Employment information - Leeds City Council
+{% endblock %}
+
+{% block css_register %}
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block service_start_page %}
+    /forms/phrc/start-page
+{% endblock %}
+
+{% block service_name %}
+    Register to join the Public Health Resource Centre
+{% endblock %}
+
+{% block form_progress %}
+{% endblock%}
+ 
+{% block header %}
+    Work information 
+{% endblock%}
+
+{% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+<a href="/forms/phrc/question-4b" class="link-back form-back">Back</a>
+{% endblock %}
+
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% block sectionOneContent %}
+<form>    
+    <fieldset>         
+        <legend class="sr-only">Work address</legend>       
+       
+            <div class="form-group postcode-completed">
+                <input data-val="true" data-val-required="Please enter a valid Leeds postcode e.g. LS6 2SB" id="Postcode" name="Postcode" type="hidden" value="LS6 2SB">
+                <label class="form-label form-label-bold" for="Postcode">Selected address</label>
+                <p>60 St George Building, 18 Great George Street, Leeds, LS1 3DL</p>
+                <a href="/forms/phrc/question-4">Change</a>
+            </div>
+            <a class="btn btn-primary btn-arrow" href="/forms/phrc/question-5">Continue</a>
+    </fieldset> 
+</form>
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+{% endblock %}
+
+{% block reusablecontent_footer %}
+    {% include "includes/footer-forms.html" %}
+{% endblock %}

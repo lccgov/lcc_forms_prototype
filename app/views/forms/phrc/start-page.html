@@ -1,0 +1,54 @@
+{% extends "layout_multi_sections-forms.html" %}
+
+{% block page_title %}
+Register to join the Public Health Resource Centre - Leeds City Council
+{% endblock %}
+
+{% block css_register %}
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block service_start_page %}
+    /forms/phrc/start-page
+{% endblock %}
+
+{% block service_name %}
+    Register to join the Public Health Resource Centre
+{% endblock %}
+ 
+{% block header %}
+    Register to join the Public Health Resource Centre
+{% endblock%}
+
+{% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+{% endblock %}
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% block sectionOneContent %}
+<div class="text">
+    <p class="lead">The Public Health Resource Centre (PHRC) offers support to anyone with a responsibility for or professional interest in public health or promoting health and wellbeing in Leeds, including students and volunteers.</p>
+    <p>Public Health Resource Centre Regulations:</p>
+    <ul class="list list-bullet">
+        <li>Members must respect other users of the PHRC and conduct themselves in an appropriate manner.</li>
+        <li>Fines on overdue books and resources will be paid in accordance with the PHRC charging policy. This is 10p per item per day (except weekends and Bank Holidays).</li>
+        <li>All resources available to loan are for educational purposes only. The showing of DVDs must be for educational, instructional purposes only. No fee may be charged for the viewing of the DVD. No copies of the DVD may be made in any format or media.</li>
+        <li>Members must ensure that the PHRC is informed of any changes in personal details, e.g. change of address, place of work.</li>
+        <li>You will be held responsible for any books or resources issued on your library card. The loss or theft of a library card must be reported to the PHRC staff immediately.</li>
+        <li>Photocopying must comply with current copyright legislation, the Public Administration Licence, and the terms of the NHS CLA Licence.</li>
+    </ul>
+</div>
+<a class="btn btn-primary btn-arrow" href="/forms/phrc/question-1">Start now</a>
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+
+{% endblock %}
+
+  {% block reusablecontent_footer %}
+  {% include "includes/reusable-content-footer.html" %}
+ {% endblock %}

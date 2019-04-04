@@ -1,0 +1,77 @@
+{% extends "layout_multi_sections-forms.html" %}
+
+{% block page_title %}
+	Age groups of interest - Leeds City Council
+{% endblock %}
+
+{% block css_register %}
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block service_start_page %}
+    /forms/phrc/start-page
+{% endblock %}
+
+{% block service_name %}
+    Register to join the Public Health Resource Centre
+{% endblock %}
+
+{% block form_progress %}
+{% endblock%}
+ 
+{% block header %}
+   Age groups of interest
+{% endblock%}
+
+{% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+<a href="/forms/phrc/question-5" class="link-back form-back">Back</a>
+{% endblock %}
+
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% block sectionOneContent %}
+<p class="form-label form-label-bold">Select the age groups you would like to recieve information about <span class="form-hint">Optional</span></p>
+<form>
+    <div class="form-group">
+        <fieldset>
+            <legend class="sr-only">Age groups of interest</legend>
+
+            <label class="block-label" for="pre-school" data-target="pre-school">
+                <input type="checkbox" id="pre-school" name="age-groups" value="Pre-school (0-4 years)" aria-controls="pre-school" aria-expanded="false">
+                Pre-school (0-4 years)
+            </label>
+            <label class="block-label" for="primary-school" data-target="primary-school">
+                <input type="checkbox" id="primary-school" name="age-groups" value="Primary school age (4-11 years)" aria-controls="primary-school2" aria-expanded="false">
+                Primary school age (4-11 years)
+            </label>
+            <label class="block-label" for="secondary-school" data-target="secondary-school">
+                <input type="checkbox" id="secondary-school" name="age-groups" value="Secondary school age (11-18 years)" aria-controls="secondary-school" aria-expanded="false">
+                Secondary school age (11-18 years)
+            </label>
+            <label class="block-label" for="adults" data-target="adults">
+                <input type="checkbox" id="adults" name="age-groups" value="Adults (18+)" aria-controls="adults" aria-expanded="false">
+                Adults (18+)
+            </label>
+            <label class="block-label" for="older-adults" data-target="older-adults">
+                <input type="checkbox" id="older-adults" name="age-groups" value="Older adults (65+)" aria-controls="older-adults" aria-expanded="false">
+                Older adults (65+)
+            </label>
+            
+          
+        </fieldset>
+    </div>
+    <a class="btn btn-primary btn-arrow" href="/forms/phrc/question-7">Continue</a>
+</form>
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+{% endblock %}
+
+  {% block reusablecontent_footer %}
+     {% include "includes/footer-forms.html" %}
+ {% endblock %}

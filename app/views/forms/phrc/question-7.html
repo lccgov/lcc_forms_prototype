@@ -1,0 +1,123 @@
+{% extends "layout_multi_sections-forms.html" %}
+
+{% block page_title %}
+	Age groups of interest - Leeds City Council
+{% endblock %}
+
+{% block css_register %}
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block service_start_page %}
+    /forms/phrc/start-page
+{% endblock %}
+
+{% block service_name %}
+    Register to join the Public Health Resource Centre
+{% endblock %}
+
+{% block form_progress %}
+
+{% endblock%}
+ 
+{% block header %}
+   Topics of interest
+{% endblock%}
+
+{% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+<a href="/forms/phrc/question-6" class="link-back form-back">Back</a>
+{% endblock %}
+
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% block sectionOneContent %}
+<p class="form-label form-label-bold">Select the topics you would like to recieve information about <span class="form-hint">Optional</span></p>
+<form>
+    <div class="form-group">
+        <fieldset>
+            <legend class="sr-only">Topics of interest</legend>
+            <label class="block-label" for="accident-prevention" data-target="accident-prevention">
+                <input type="checkbox" id="accident-prevention" name="topics-groups" value="Accident prevention" aria-controls="accident-prevention" aria-expanded="false">
+                Accident prevention
+            </label>
+            <label class="block-label" for="healthy-eating" data-target="healthy-eating">
+                <input type="checkbox" id="healthy-eating" name="topics-groups" value="Healthy eating" aria-controls="healthy-eating" aria-expanded="false">
+                Healthy eating
+            </label>
+            <label class="block-label" for="mental-health" data-target="mental-health">
+                <input type="checkbox" id="mental-health" name="topics-groups" value="Mental health" aria-controls="mental-health" aria-expanded="false">
+                Mental health
+            </label>
+            <label class="block-label" for="adults" data-target="adults">
+                <input type="checkbox" id="adults" name="topics-groups" value="Parenting / child health" aria-controls="adults" aria-expanded="false">
+                Parenting / child health
+            </label>
+            <label class="block-label" for="physical-activity" data-target="physical-activity">
+                <input type="checkbox" id="physical-activity" name="topics-groups" value="Physical activity" aria-controls="physical-activity" aria-expanded="false">
+                Physical activity
+            </label>
+            <label class="block-label" for="sexual-health" data-target="sexual-health">
+                <input type="checkbox" id="sexual-health" name="topics-groups" value="Sexual health" aria-controls="sexual-health" aria-expanded="false">
+                Sexual health
+            </label>
+            <label class="block-label" for="substance-use" data-target="substance-use">
+                <input type="checkbox" id="substance-use" name="topics-groups" value="Substance use" aria-controls="substance-use" aria-expanded="false">
+                Substance use
+            </label>
+            <label class="block-label" for="public-health-course" data-target="public-health-course">
+                <input type="checkbox" id="public-health-course" name="topics-groups" value="Public health course" aria-controls="public-health-course" aria-expanded="false">
+                Public health course
+            </label>
+            <label class="block-label" for="training" data-target="training">
+                <input type="checkbox" id="training" name="topics-groups" value="Training and development" aria-controls="training" aria-expanded="false">
+                Training and development
+            </label>
+            <label class="block-label" for="health-protection" data-target="health-protection">
+                <input type="checkbox" id="health-protection" name="topics-groups" value="Health protection" aria-controls="health-protection" aria-expanded="false">
+                Health protection
+            </label>
+            <label class="block-label" for="education" data-target="education">
+                <input type="checkbox" id="education" name="topics-groups" value="Education/PHSE" aria-controls="education" aria-expanded="false">
+                Education/PHSE
+            </label>
+            <label class="block-label" for="workplace-health" data-target="workplace-health">
+                <input type="checkbox" id="workplace-health" name="topics-groups" value="Workplace health" aria-controls="workplace-health" aria-expanded="false">
+                Workplace health
+            </label>
+            <label class="block-label" for="minority-communities" data-target="minority-communities">
+                <input type="checkbox" id="minority-communities" name="topics-groups" value=" Minority communities" aria-controls="minority-communities" aria-expanded="false">
+                Minority communities
+            </label>
+            <label class="block-label" for="disabilities" data-target="disabilities">
+                <input type="checkbox" id="disabilities" name="topics-groups" value="Disabilities" aria-controls="disabilities" aria-expanded="false">
+                Disabilities
+            </label>
+            <label class="block-label" for="mens-health" data-target="mens-health">
+                <input type="checkbox" id="mens-health" name="topics-groups" value="Mens health" aria-controls="mens-health" aria-expanded="false">
+                Mens health
+            </label>
+            <label class="block-label" for="womens-health" data-target="womens-health">
+                <input type="checkbox" id="adults" name="womens-health" value="Womens health" aria-controls="womens-health" aria-expanded="false">
+                Womens health
+            </label>
+            <label class="block-label" for="longterm-conditions" data-target="longterm-conditions">
+                <input type="checkbox" id="longterm-conditions" name="topics-groups" value="Longterm conditions" aria-controls="longterm-conditions" aria-expanded="false">
+                Longterm conditions
+            </label>
+        </fieldset>
+    </div>
+    <a class="btn btn-primary btn-arrow" href="/forms/phrc/question-8">Continue</a>
+</form>
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+{% endblock %}
+
+  {% block reusablecontent_footer %}
+     {% include "includes/footer-forms.html" %}
+ {% endblock %}

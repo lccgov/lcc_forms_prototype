@@ -1,0 +1,94 @@
+{% extends "layout_multi_sections-forms.html" %}
+
+{% block page_title %}
+	Contact details - Leeds City Council
+{% endblock %}
+
+{% block css_register %}
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block service_start_page %}
+    /forms/phrc/start-page
+{% endblock %}
+
+{% block service_name %}
+Register to join the Public Health Resource Centre
+{% endblock %}
+
+{% block form_progress %}
+{% endblock%}
+ 
+{% block header %}
+   Contact details
+{% endblock%}
+
+{% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+<a href="/forms/phrc/question-4c" class="link-back form-back">Back</a>
+{% endblock %}
+
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% block sectionOneContent %}
+
+<p>Please provide us with your contact details as we may need to contact you.</p>
+
+<form>
+    <div class="form-group">
+        <fieldset>
+            <legend class="sr-only">Contact details</legend>
+            <div class="form-group">
+                <label class="form-label form-label-bold" for="full-name">Full name</label>
+                <input class="form-control" id="full-name" type="text" name="full-name">
+            </div>
+            <div class="form-group">
+                <p class="form-label">How would you like to be contacted? <span class="form-hint">Please select at least one option</span></p>
+                <label class="block-label form-label-bold" for="email" data-target="email">
+                    <input type="checkbox" id="email" name="email" value="email" aria-controls="email" aria-expanded="false">
+                    Email
+                </label>
+                <div class="panel panel-border-narrow js-hidden" id="example-email-input">
+                    <label class="form-label form-label-bold" for="email-input">Email</label>
+                    <input class="form-control" type="text" id="email-input" name="email-input">
+                </div>
+
+                <label class="block-label form-label-bold" for="phone" data-target="phone">
+                    <input type="checkbox" id="phone" name="phone" value="phone" aria-controls="train" aria-expanded="false">
+                    Phone
+                </label>                
+                <div class="panel panel-border-narrow js-hidden" id="example-phone-input">
+                    <label class="form-label form-label-bold" for="phone-input">Phone</label>
+                    <input class="form-control" type="text" id="phone-input" name="phone-input">
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label class="form-label form-label-bold" for="AdditionalInfo">Any additional information <span class="form-hint">Optional</span></label>
+                
+                <textarea class="form-control" cols="20" data-val="true" id="AdditionalInfo" name="AdditionalInfo" rows="5"></textarea>
+            </div>
+
+            <div class="notice">
+                <i class="fa fa-exclamation-triangle" aria-hidden="true">
+                    <span class="sr-only">Warning</span>
+                </i>
+                <strong class="bold-small">By submitting this form you give consent for Leeds City Council to use your email address or contact number to contact you regarding this enquiry.</strong>
+            </div>
+        </fieldset>
+    </div>
+    <a class="btn btn-primary btn-arrow" href="/forms/phrc/question-6">Continue</a>
+</form>
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+{% endblock %}
+
+  {% block reusablecontent_footer %}
+     {% include "includes/footer-forms.html" %}
+ {% endblock %}

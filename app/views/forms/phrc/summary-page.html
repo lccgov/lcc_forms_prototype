@@ -1,0 +1,122 @@
+{% extends "layout_multi_sections-forms.html" %}
+
+{% block page_title %}
+	Request a new or replacement bin - Check your answers page
+{% endblock %}
+
+{% block css_register %}
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block service_start_page %}
+    /forms/phrc/start-page
+{% endblock %}
+
+{% block service_name %}
+    Register to join the Public Health Resource Centre
+{% endblock %}
+
+{% block form_progress %}
+{% endblock%}
+ 
+{% block header %}
+    Check your answers before submitting your form
+{% endblock%}
+
+{% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+<a href="/forms/phrc/question-8" class="link-back form-back">Back</a>
+{% endblock %}
+
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% block sectionOneContent %}
+
+<div class="text">
+
+    <h2>Your position</h2>
+    <div class="text-block">
+        <p><strong>What is your position?</strong> <br>Professional</p>
+        <p><a href="/forms/phrc/question-1">Change</a></p>
+    </div>
+
+    <h2>Professional information</h2>
+    <div class="text-block">
+        <p><strong>Professional category</strong><br> Consultant</p>
+        <p><a href="/forms/phrc/question-2">Change</a></p>
+    </div>
+
+    <h2>Employment information</h2>
+    <div class="text-block">
+        <p><strong>Job title</strong><br> Recruitment consultant</p>
+        <p><strong>Department</strong><br> Human resources</p>
+        <p><strong>Organisation</strong><br> Leeds City Council</p>
+        <p><strong>Work telephone number</strong><br> 0113 1234123</p>
+        <p><a href="/forms/phrc/question-3">Change</a></p>
+    </div>
+
+    <h2>Work information</h2>
+    <div class="text-block">
+        <p><strong>Address</strong><br> Leeds City Council, Merrion House<br>
+         Merrion Way<br>
+         Leeds<br>
+         LS2 8PD</p>
+        <p><a href="/forms/phrc/question-4c">Change</a></p>
+    </div>
+
+    <h2>Contact details</h2>
+    <div class="text-block">
+        <p><strong>Name</strong><br> John Doe</p>        
+        <p><strong>How would you like to be contacted?</strong><br> Email: john.doe@leeds.gov.uk<br>Telephone: 0113 1234123</p>
+        <p><a href="/forms/phrc/question-5">Change</a></p>
+    </div>
+
+
+    <h2>Age groups of interest</h2>
+    <div class="text-block">
+        <p><strong>Select the age groups you would like to recieve information about</strong></p>
+        <ul class="list list-bullet">
+            <li>Pre-school (0-4 years)</li>
+            <li>Primary school age (4-11 years)</li>
+        </ul>
+        <p><a href="/forms/phrc/question-6">Change</a></p>
+    </div>
+ 
+    <h2>Topics of interest</h2>
+    <div class="text-block">
+        <p><strong>Select the topics you would like to recieve information about</strong></p>
+        <ul class="list list-bullet">
+            <li>Accident prevention</li>
+            <li>Mental health</li>
+        </ul>
+        <p><a href="/forms/phrc/question-7">Change</a></p>
+    </div>
+
+    <h2>Additional details</h2>
+    <div class="text-block">
+        <p><strong>How did you hear about the Public Health Resource Centre?</strong><br>
+        I read about it online.</p>
+        <p><a href="/forms/phrc/question-8">Change</a></p>
+    </div>
+
+    <div class="notice">
+        <i class="fa fa-exclamation-triangle" aria-hidden="true">
+            <span class="sr-only">Warning</span>
+        </i>
+        <strong class="bold-small">By submitting this form you are confirming that, to the best of your knowledge, the details you are providing are correct.</strong>    
+    </div>
+    
+    <a class="btn btn-primary btn-arrow" href="/forms/phrc/confirmation-page">Submit</a>
+</div>
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+{% endblock %}
+
+  {% block reusablecontent_footer %}
+     {% include "includes/footer-forms.html" %}
+ {% endblock %}

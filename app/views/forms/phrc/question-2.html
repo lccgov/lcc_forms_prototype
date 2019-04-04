@@ -1,0 +1,75 @@
+{% extends "layout_multi_sections-forms.html" %}
+
+{% block page_title %}
+	Professional information - Leeds City Council
+{% endblock %}
+
+{% block css_register %}
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block service_start_page %}
+    /forms/phrc/start-page
+{% endblock %}
+
+{% block service_name %}
+Register to join the Public Health Resource Centre
+{% endblock %}
+
+{% block form_progress %}
+{% endblock%}
+ 
+{% block header %}
+    Professional information
+{% endblock%}
+
+{% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+<a href="/forms/phrc/question-1" class="link-back form-back">Back</a>
+{% endblock %}
+
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% block sectionOneContent %}
+<form>
+    <div class="form-group">
+        <fieldset>
+            <legend class="sr-only">Professional category</legend>
+            <label class="form-label form-label-bold" for="select-box">Professional category
+                <span class="form-hint">
+                    Optional
+                </span>
+            </label>
+            <select class="form-control" id="select-box" name="select-box">
+                <option selected="selected" value="">Please select...</option>
+                <option value="0">Admin/Clerical/Management</option>
+                <option value="1">Allied health profesional</option>
+                <option value="2">Community dentist</option>
+                <option value="3">Community worker</option>
+                <option value="4">Community pharmacist</option>
+                <option value="5">Criminal Justice Staff</option>
+                <option value="6">Consultant</option>
+                <option value="7">Education staff</option>
+                <option value="8">GP</option>
+                <option value="9">Healthcare/Support worker</option>
+                <option value="10">Nurse/Midwife/Health visitor</option>
+                <option value="11">Social services staff</option>
+                <option value="12">Voluntary sector</option>
+            </select>
+        </fieldset>
+    </div>
+ 
+    <a class="btn btn-primary btn-arrow" href="/forms/phrc/question-3">Continue</a>
+</form>
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+{% endblock %}
+
+  {% block reusablecontent_footer %}
+     {% include "includes/footer-forms.html" %}
+ {% endblock %}

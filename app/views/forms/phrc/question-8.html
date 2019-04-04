@@ -1,0 +1,57 @@
+{% extends "layout_multi_sections-forms.html" %}
+
+{% block page_title %}
+	Age groups of interest - Leeds City Council
+{% endblock %}
+
+{% block css_register %}
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block service_start_page %}
+    /forms/phrc/start-page
+{% endblock %}
+
+{% block service_name %}
+    Register to join the Public Health Resource Centre
+{% endblock %}
+
+{% block form_progress %}
+
+{% endblock%}
+ 
+{% block header %}
+Additional details
+{% endblock%}
+
+{% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+<a href="/forms/phrc/question-7" class="link-back form-back">Back</a>
+{% endblock %}
+
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% block sectionOneContent %}
+<form>
+    <div class="form-group">
+        <fieldset>
+            <legend class="sr-only">How did you hear about the Public Health Resource Centre?</legend>
+            <label for="comment-box" class="form-label form-label-bold">How did you hear about the Public Health Resource Centre? <span class="form-hint">Optional</span></label>
+            <textarea class="form-control" cols="20" data-val="true" data-val-maxtwohundredcharactersallowed="Maximum of 200 characters allowed" data-val-maxtwohundredcharactersallowed-pattern="^(.|
+        |	){1,200}$" id="HowDidYouHear" name="HowDidYouHear" rows="3"></textarea>              
+        </fieldset>
+    </div>
+    <a class="btn btn-primary btn-arrow" href="/forms/phrc/summary-page">Continue</a>
+</form>
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+{% endblock %}
+
+  {% block reusablecontent_footer %}
+     {% include "includes/footer-forms.html" %}
+ {% endblock %}

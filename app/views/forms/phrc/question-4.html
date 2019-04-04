@@ -1,0 +1,55 @@
+{% extends "layout_multi_sections-forms.html" %}
+
+{% block page_title %}
+	Employment information - Leeds City Council
+{% endblock %}
+
+{% block css_register %}
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block service_start_page %}
+    /forms/phrc/start-page
+{% endblock %}
+
+{% block service_name %}
+    Register to join the Public Health Resource Centre
+{% endblock %}
+
+{% block form_progress %}
+{% endblock%}
+ 
+{% block header %}
+    Work information 
+{% endblock%}
+
+{% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+<a href="/forms/phrc/question-3" class="link-back form-back">Back</a>
+{% endblock %}
+
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% block sectionOneContent %}
+<form>    
+    <fieldset>         
+        <legend class="sr-only">Work address</legend>        
+        <div class="form-group postcode-lookup">
+            <label class="form-label form-label-bold" for="postcode">Enter work postcode <span class="form-hint">For example, LS2 8PD</span></label>
+            <input data-val="true" data-val-required="Please enter a valid Leeds postcode e.g. LS6 2SB" id="postcode" name="postcode" type="text" class="form-control">
+        </div>   
+        <button class="btn btn-primary prototype-postcode-btn-one" type="button" onclick="window.location.href='/forms/phrc/question-4b'">Find address</button>
+    </fieldset> 
+</form>
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+{% endblock %}
+
+  {% block reusablecontent_footer %}
+     {% include "includes/footer-forms.html" %}
+ {% endblock %}
