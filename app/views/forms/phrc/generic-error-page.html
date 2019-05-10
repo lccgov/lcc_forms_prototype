@@ -1,0 +1,52 @@
+{% extends "layout_multi_sections-forms.html" %}
+
+{% block page_title %}
+Unable to process your request - Leeds City Council
+{% endblock %}
+
+{% block css_register %}
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block service_start_page %}
+    /forms/phrc/start-page
+{% endblock %}
+
+{% block service_name %}
+Register to join the Public Health Resource Centre
+{% endblock %}
+ 
+{% block header %}
+    We are unable to process your request
+{% endblock%}
+
+{% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+{% endblock %}
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% block sectionOneContent %}
+<div class="text">
+
+    <div class="error-summary" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+      
+        <p>Unfortunately we are unable to process your request. You could start the form again, have a look through <a href="#">leeds.gov.uk</a> or <a href="">contact us</a> for further help.</p>
+        <ul class="error-summary-list">
+            <li><a href="/forms/phrc/start-page">Start Register to join the Public Health Resource Centre form again</a></li>
+        </ul>
+    </div>
+            
+</div>
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+
+{% endblock %}
+
+  {% block reusablecontent_footer %}
+  {% include "includes/reusable-content-footer.html" %}
+ {% endblock %}

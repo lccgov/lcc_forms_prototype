@@ -1,0 +1,89 @@
+{% extends "layout_multi_sections-forms.html" %}
+
+{% block page_title %}
+	Employment information - Leeds City Council
+{% endblock %}
+
+{% block css_register %}
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block service_start_page %}
+    /forms/phrc/start-page
+{% endblock %}
+
+{% block service_name %}
+    Register to join the Public Health Resource Centre
+{% endblock %}
+
+{% block form_progress %}
+{% endblock%}
+ 
+{% block header %}
+    Employment information  
+{% endblock%}
+
+{% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+<a href="/forms/phrc/question-2" class="link-back form-back">Back</a>
+{% endblock %}
+
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% block sectionOneContent %}
+<form>    
+    <fieldset>         
+        <div class="error-summary spacerBottom" role="alert" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+            <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+                Sorry, there was a problem
+            </h2>
+            <p>
+                You'll find more details highlighted below.
+            </p>
+            <ul class="error-summary-list">
+                <li><a href="#job-title">You must enter a job title</a></li>
+                <li><a href="#organisation">You must enter what organisation you work for</a></li>
+                <li><a href="#work-telephone">You must enter your work telephone number</a></li>
+            </ul>
+        </div>
+        
+        <legend class="sr-only">Employment information </legend>
+                
+        <div class="form-group form-group-error">
+            <label class="form-label form-label-bold" for="job-title">Job title</label>
+            <input class="form-control" id="job-title" type="text" name="job-title">
+            <span class="error-message">Please enter your job title</span> 
+        </div>  
+
+        <div class="form-group">
+            <label class="form-label form-label-bold" for="department">Department <span class="form-hint">Optional</span></label>
+            <input class="form-control" id="department" type="text" name="department">
+        </div>
+
+        <div class="form-group form-group-error">    
+            <label class="form-label form-label-bold" for="organisation">Organisation</label>
+            <input class="form-control" id="organisation" type="text" name="organisation">
+            <span class="error-message">Please enter what organisation you work for</span>
+        </div>  
+
+        <div class="form-group form-group-error">   
+            <label class="form-label form-label-bold" for="work-telephone">Work telephone number</label>
+            <input class="form-control" id="work-telephone" type="text" name="work-telephone">   
+            <span class="error-message">Please enter your work telephone number</span>
+        </div>        
+        
+    </fieldset> 
+    <a class="btn btn-primary btn-arrow" href="/forms/phrc/question-4">Continue</a>
+</form>
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+{% endblock %}
+
+  {% block reusablecontent_footer %}
+     {% include "includes/footer-forms.html" %}
+ {% endblock %}

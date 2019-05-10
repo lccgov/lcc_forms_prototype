@@ -1,0 +1,78 @@
+{% extends "layout_multi_sections-forms.html" %}
+
+{% block page_title %}
+	Request a new or replacement bin - Disclaimer
+{% endblock %}
+
+{% block css_register %}
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block service_start_page %}
+    /forms/phrc/start-page
+{% endblock %}
+
+{% block service_name %}
+    Register to join the Public Health Resource Centre
+{% endblock %}
+
+{% block form_progress %}
+{% endblock%}
+ 
+{% block header %}
+Terms and conditions
+{% endblock%}
+
+{% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+<a href="/forms/phrc/question-8" class="link-back form-back">Back</a>
+{% endblock %}
+
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% block sectionOneContent %}
+
+<div class="text">
+
+    <p>You can find out more about the scheme by <a href="#" rel="external">reading through the terms and conditions <span class="sr-only">External link</span></a>.</p>
+
+    <div class="notice">
+        <i class="fa fa-exclamation-triangle" aria-hidden="true">
+            <span class="sr-only">Warning</span>
+        </i>
+        <strong class="bold-small">You must ensure you have read and understood the terms and conditions.</strong>
+    </div>           
+        
+    <div class="form-group">
+        <fieldset>
+
+            <legend class="sr-only">Do you agree to the disclaimer?</legend>
+
+            <div class="form-group">
+               
+                <label class="block-label" for="disclaimer-agree" data-target="disclaimer-agree">
+                    <input type="checkbox" id="disclaimer-agree" name="radio-group" value="I agree" aria-controls="disclaimer-agree" aria-expanded="false">
+                    I agree to the terms and conditions
+                </label>                
+               
+            </div>
+        
+        </fieldset>
+    </div>
+
+ 
+
+    <a class="btn btn-primary btn-arrow" href="/forms/phrc/summary-page">Continue</a>
+</div>
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+{% endblock %}
+
+  {% block reusablecontent_footer %}
+     {% include "includes/footer-forms.html" %}
+ {% endblock %}
