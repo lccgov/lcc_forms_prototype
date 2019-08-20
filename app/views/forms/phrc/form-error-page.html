@@ -55,8 +55,8 @@
                 
         <div class="form-group form-group-error">
             <label class="form-label form-label-bold" for="job-title">Job title</label>
-            <input class="form-control" id="job-title" type="text" name="job-title">
-            <span class="error-message">Please enter your job title</span> 
+            <span id="job-title-error" class="error-message"><span class="sr-only">Error: </span>Enter your job title</span> 
+            <input class="form-control" id="job-title" type="text" name="job-title" aria-describedby="job-title-error">
         </div>  
 
         <div class="form-group">
@@ -66,14 +66,14 @@
 
         <div class="form-group form-group-error">    
             <label class="form-label form-label-bold" for="organisation">Organisation</label>
-            <input class="form-control" id="organisation" type="text" name="organisation">
-            <span class="error-message">Please enter what organisation you work for</span>
+            <span id="organisation-error" class="error-message"><span class="sr-only">Error: </span>Enter what organisation you work for</span>
+            <input class="form-control" id="organisation" type="text" name="organisation" aria-describedby="organisation-error">
         </div>  
 
         <div class="form-group form-group-error">   
-            <label class="form-label form-label-bold" for="work-telephone">Work telephone number</label>
-            <input class="form-control" id="work-telephone" type="text" name="work-telephone">   
-            <span class="error-message">Please enter your work telephone number</span>
+            <label class="form-label form-label-bold" for="work-telephone">Work telephone number</label> 
+            <span id="telephone-error" class="error-message"><span class="sr-only">Error: </span>Enter your work telephone number</span>
+            <input class="form-control" id="work-telephone" type="text" name="work-telephone" aria-describedby="telephone-error">  
         </div>        
         
     </fieldset> 
