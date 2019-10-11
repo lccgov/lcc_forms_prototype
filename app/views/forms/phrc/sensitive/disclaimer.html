@@ -1,0 +1,98 @@
+{% extends "layout_multi_sections-forms.html" %}
+
+{% block page_title %}
+	Request a new or replacement bin - Disclaimer
+{% endblock %}
+
+{% block css_register %}
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block service_start_page %}
+    /forms/phrc/start-page
+{% endblock %}
+
+{% block service_name %}
+    Register to join the Public Health Resource Centre
+{% endblock %}
+
+{% block form_progress %}
+{% endblock%}
+ 
+{% block header %}
+    Disclaimer
+{% endblock%}
+
+{% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+<a href="/forms/phrc/sensitive/question-4" class="link-back form-back">Back</a>
+{% endblock %}
+
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% block sectionOneContent %}
+
+<div class="text">
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit:</p>
+
+    <ul class="list list-number">
+        <li>lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris volutpat neque magna, ac dapibus mi vestibulum id. Aliquam vehicula luctus dignissim. Cras quis risus at ipsum posuere efficitur;</li>
+        <li>vestibulum eu nisi varius, mattis dui id, semper arcu. Mauris non luctus nunc. In placerat orci sit amet vulputate pulvinar;</li>
+        <li>maecenas at molestie mauris. Curabitur quis mauris metus. Fusce odio nisi, feugiat euismod nunc id, lacinia vestibulum sapien. Aliquam pretium turpis sed lorem dictum;</li>
+        <li>maecenas vestibulum ipsum ac magna dictum sollicitudin. Nullam cursus vitae odio interdum interdum. Quisque ante enim, bibendum eget dui et –</li>
+            <ul class="list list-number">
+                <li>fusce rhoncus risus id nisi malesuada, non viverra diam egestas. Mauris laoreet iaculis mauris a vestibulum;</li>
+                <li>integer venenatis rutrum ante, sed congue enim posuere ut. Quisque aliquam mauris lacus, nec vulputate mauris rutrum eu.</li>
+            </ul>
+        <li>nullam lorem leo, sagittis sit amet luctus ac, porta eu tellus. Nunc eget rhoncus arcu. Nullam hendrerit urna turpis, quis efficitur lectus laoreet eu;</li>
+        <li>maecenas ullamcorper luctus nulla vitae euismod. Morbi iaculis risus leo, posuere venenatis nunc ullamcorper ut. Integer sapien mauris.</li>
+    </ul>
+
+    <div class="notice">
+            <i class="fa fa-exclamation-triangle" aria-hidden="true">
+                <span class="sr-only">Warning</span>
+            </i>
+            <strong class="bold-small">You must ensure you have read through the disclaimer and inform us of any points which relate to yourself, not doing so may delay your request.</strong>
+        </div>
+
+    <p class="form-label form-label-bold">Do any of the disclaimer points listed above relate to yourself?</p>
+    <div class="form-group">
+        <fieldset>
+
+            <legend class="sr-only">Do any of the disclaimer points listed above relate to yourself?</legend>
+
+            <div class="form-group">
+
+                <label class="block-label" for="disclaimer-yes" data-target="disclaimer-yes">
+                    <input type="radio" id="disclaimer-yes" name="radio-group" value="Yes" aria-controls="disclaimer-yes" aria-expanded="false">
+                    Yes
+                </label>
+                <div class="panel panel-border-narrow js-hidden" id="disclaimer-yes">
+                    <label class="form-label" for="yes-information-input">Tell us how any of the points listed in the disclaimer relate to yourself</label>
+                    <textarea name="yes-information-input" id="yes-information-input" rows="4" cols="20" class="form-control form-control-3-4"></textarea>  
+                </div>
+                <label class="block-label" for="disclaimer-no" data-target="disclaimer-no">
+                    <input type="radio" id="disclaimer-no" name="radio-group" value="No" aria-controls="disclaimer-no" aria-expanded="false">
+                    No
+                </label>                
+               
+            </div>
+        
+        </fieldset>
+    </div>
+
+    <a class="btn btn-primary btn-arrow" href="/forms/phrc/sensitive/summary-page">Continue</a>
+</div>
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+{% endblock %}
+
+  {% block reusablecontent_footer %}
+     {% include "includes/footer-forms.html" %}
+ {% endblock %}

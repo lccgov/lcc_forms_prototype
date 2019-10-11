@@ -1,0 +1,88 @@
+{% extends "layout_multi_sections-forms.html" %}
+
+{% block page_title %}
+	Request a new or replacement bin - Check your answers page
+{% endblock %}
+
+{% block css_register %}
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block service_start_page %}
+    /forms/phrc/sensitive/start-page
+{% endblock %}
+
+{% block service_name %}
+    Register to join the Public Health Resource Centre
+{% endblock %}
+
+{% block form_progress %}
+{% endblock%}
+ 
+{% block header %}
+    Check your answers before submitting your form
+{% endblock%}
+
+{% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+<a href="/forms/phrc/sensitive/disclaimer" class="link-back form-back">Back</a>
+{% endblock %}
+
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% block sectionOneContent %}
+
+<div class="text">
+
+    <h2>Gender and Sex</h2>
+    <div class="text-block">
+        <p><strong>Your Gender and Sex</strong> <br>Male (including Trans Male)</p>
+        <p><a href="/forms/phrc/sensitive/question-1">Change</a></p>
+    </div>
+
+    <h2>Your Ethnicity</h2>
+    <div class="text-block">
+        <p><strong>What is your ethnicity?</strong><br> White : British, English, Northern Irish, Scottish, or Welsh</p>
+        <p><a href="/forms/phrc/sensitive/question-2">Change</a></p>
+    </div>
+
+    <h2>Your Marital Status</h2>
+    <div class="text-block">
+        <p><strong>What is your marital status?</strong><br> Single</p>
+        <p><a href="/forms/phrc/sensitive/question-3">Change</a></p>
+    </div>
+
+    <h2>Your Religion or Belief</h2>
+    <div class="text-block">
+        <p><strong>Please indicate which best describes your religion or belief</strong><br>No religion</p>
+        <p><a href="/forms/phrc/sensitive/question-4c">Change</a></p>
+    </div>
+
+    <h2>Disclaimer</h2>
+    <div class="text-block">
+        <p><strong>Do any of the disclaimer points listed above relate to yourself?</strong><br>
+        No</p>
+        <p><a href="/forms/phrc/sensitive/disclaimer">Change</a></p>
+    </div>
+
+    <div class="notice">
+        <i class="fa fa-exclamation-triangle" aria-hidden="true">
+            <span class="sr-only">Warning</span>
+        </i>
+        <strong class="bold-small">By submitting this form you are confirming that, to the best of your knowledge, the details you are providing are correct.</strong>    
+    </div>
+    
+    <a class="btn btn-primary btn-arrow" href="/forms/phrc/sensitive/confirmation-page">Submit</a>
+</div>
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+{% endblock %}
+
+  {% block reusablecontent_footer %}
+     {% include "includes/footer-forms.html" %}
+ {% endblock %}

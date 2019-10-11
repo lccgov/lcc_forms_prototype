@@ -1,0 +1,54 @@
+{% extends "layout_multi_sections-forms.html" %}
+
+{% block page_title %}
+	Form example - Confirmation page
+{% endblock %}
+
+{% block css_register %}
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block service_start_page %}
+    /forms/phrc/start-page
+{% endblock %}
+
+{% block service_name %}
+    Register to join the Public Health Resource Centre
+{% endblock %}
+
+{% block form_progress %}
+{% endblock%}
+ 
+{% block header %}
+{% endblock%}
+
+{% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+{% endblock %}
+
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% block sectionOneContent %}
+<h1>Form complete</h1>
+<p>Thank you for submitting your form. We will contact you shortly.</p>
+
+<div class="panel panel-confirmation">
+    <p class="font-large">Your reference number is<br> 
+    <strong>ABCDE10</strong></p>
+</div>
+
+<p>Go back to <a href="https://www.leeds.gov.uk">leeds.gov.uk</a></p>
+
+
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+{% endblock %}
+
+  {% block reusablecontent_footer %}
+     {% include "includes/footer-forms.html" %}
+ {% endblock %}

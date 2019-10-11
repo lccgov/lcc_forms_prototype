@@ -1,0 +1,69 @@
+{% extends "layout_multi_sections-forms.html" %}
+
+{% block page_title %}
+    Your Religion or Belief - Leeds City Council
+{% endblock %}
+
+{% block css_register %}
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block service_start_page %}
+    /forms/phrc/start-page
+{% endblock %}
+
+{% block service_name %}
+    Your Religion or Belief
+{% endblock %}
+
+{% block form_progress %}
+{% endblock%}
+ 
+{% block header %}
+    Your Religion or Belief
+{% endblock%}
+
+{% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+<a href="/forms/phrc/sensitive/question-2" class="link-back form-back">Back</a>
+{% endblock %}
+
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% block sectionOneContent %}
+<form>
+    <div class="form-group">
+        <span class="error-message">Choose an answer</span>
+        <label class="form-label" for="select-box">Please indicate which best describes your religion or belief</label>
+        <select class="form-control" id="select-box" name="select-box">
+            <option value="" selected="selected" disabled="disabled">-- select one --</option>
+            <option value="Buddhist">Buddhist</option>
+            <option value="Christian">Christian</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Jewish">Jewish</option>
+            <option value="Muslim">Muslim</option>
+            <option value="Sikh">Sikh</option>
+            <option value="No religion">No religion</option>
+            <option value="No belief">No belief</option>
+            <option value="I prefer not to say">I prefer not to say</option>
+            <option value="Other">Other - please write below</option>
+        </select>
+        <div class="panel panel-border-narrow js-hidden" id="other-religion">
+            <label class="form-label" for="other-religion">Other </label>
+            <input class="form-control" name="other-religion" type="text" id="other-religion">
+        </div>
+    </div>
+    <a href="/forms/phrc/sensitive/summary-page" class="btn btn-primary">Continue</a>
+</form>
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+{% endblock %}
+
+  {% block reusablecontent_footer %}
+     {% include "includes/footer-forms.html" %}
+ {% endblock %}

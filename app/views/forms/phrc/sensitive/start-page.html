@@ -1,0 +1,46 @@
+{% extends "layout_multi_sections-forms.html" %}
+
+{% block page_title %}
+Asking for sensitive information - Leeds City Council
+{% endblock %}
+
+{% block css_register %}
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block service_start_page %}
+    /forms/phrc/sensitive/start-page
+{% endblock %}
+
+{% block service_name %}
+    Asking for sensitive information
+{% endblock %}
+ 
+{% block header %}
+    Asking for sensitive information
+{% endblock%}
+
+{% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+{% endblock %}
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% block sectionOneContent %}
+
+<div class="text">
+    <p class="lead">Test form with examples on how to ask for sensitive information</p>
+</div>
+<a class="btn btn-primary btn-arrow" href="/forms/phrc/sensitive/question-1">Start now</a>
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+
+{% endblock %}
+
+  {% block reusablecontent_footer %}
+  {% include "includes/reusable-content-footer.html" %}
+ {% endblock %}
