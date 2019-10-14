@@ -13,7 +13,7 @@
 {% endblock %}
 
 {% block service_name %}
-    Your Religion or Belief
+Asking for sensitive information
 {% endblock %}
 
 {% block form_progress %}
@@ -30,15 +30,14 @@
 <a href="/forms/phrc/sensitive/question-2" class="link-back form-back">Back</a>
 {% endblock %}
 
-
 {% block breadcrumb %}
 {% endblock %}
 
 {% block sectionOneContent %}
 <form>
     <div class="form-group">
-        <span class="error-message">Choose an answer</span>
-        <label class="form-label" for="select-box">Please indicate which best describes your religion or belief</label>
+
+        <label class="form-label" for="select-box">What is your religion or belief? <span class="form-hint">Please indicate which best describes your religion or belief</span></label>
         <select class="form-control" id="select-box" name="select-box">
             <option value="" selected="selected" disabled="disabled">-- select one --</option>
             <option value="Buddhist">Buddhist</option>

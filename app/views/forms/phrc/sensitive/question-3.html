@@ -13,14 +13,14 @@
 {% endblock %}
 
 {% block service_name %}
-    Marital Status
+    Asking for sensitive information
 {% endblock %}
 
 {% block form_progress %}
 {% endblock%}
  
 {% block header %}
-    Your Marital Status
+Marital status    
 {% endblock%}
 
 {% block sectionOneTop %}
@@ -35,41 +35,47 @@
 {% endblock %}
 
 {% block sectionOneContent %}
-<h1 class="heading-large">What is your marital status?</h1>
+
 <form>
 
     <div class="form-group">
-        <span class="error-message">Choose an answer</span>
+        
+        <fieldset>
 
-        <div class="form-group--radio">
-            <input type="radio" id="radio-1" name="level0" value="Single" aria-controls="radio-1">
-            <label class="form-label form-label-bold form-label-large form-label-radio" for="radio-1">Single</label>
-        </div>
+            <p class="form-label form-label-bold">What is your marital status? <span class="form-hint">Optional</span></p>
+            <legend class="sr-only">What is your marital status?</legend>
 
-        <div class="form-group--radio">
-            <input type="radio" id="radio-2" name="level0" value="Married" aria-controls="radio-2">
-            <label class="form-label form-label-bold form-label-large form-label-radio" for="radio-2">Married </label>
-        </div>
+            <div class="form-group--radio">
+                <input type="radio" id="radio-1" name="level0" value="Single" aria-controls="radio-1">
+                <label class="form-label form-label-bold  form-label-radio" for="radio-1">Single</label>
+            </div>
 
-        <div class="form-group--radio">
-            <input type="radio" id="radio-3" name="level0" value="Widowed" aria-controls="radio-3">
-            <label class="form-label form-label-bold form-label-large form-label-radio" for="radio-3">Widowed</label>
-        </div>
+            <div class="form-group--radio">
+                <input type="radio" id="radio-2" name="level0" value="Married" aria-controls="radio-2">
+                <label class="form-label form-label-bold  form-label-radio" for="radio-2">Married </label>
+            </div>
 
-        <div class="form-group--radio">
-            <input type="radio" id="radio-4" name="level0" value="Separated" aria-controls="radio-4">
-            <label class="form-label form-label-bold form-label-large form-label-radio" for="radio-4">Separated</label>
-        </div>
+            <div class="form-group--radio">
+                <input type="radio" id="radio-3" name="level0" value="Widowed" aria-controls="radio-3">
+                <label class="form-label form-label-bold  form-label-radio" for="radio-3">Widowed</label>
+            </div>
 
-        <div class="form-group--radio">
-            <input type="radio" id="radio-5" name="level0" value="Divorced" aria-controls="radio-5">
-            <label class="form-label form-label-bold form-label-large form-label-radio" for="radio-5">Divorced</label>
-        </div>
-        <div class="form-group--radio">
-            <input type="radio" id="radio-6" name="level0" value="I prefer not to say" aria-controls="radio-6">
-            <label class="form-label form-label-bold form-label-large form-label-radio" for="radio-6">I prefer not to say</label>
-        </div>
+            <div class="form-group--radio">
+                <input type="radio" id="radio-4" name="level0" value="Separated" aria-controls="radio-4">
+                <label class="form-label form-label-bold  form-label-radio" for="radio-4">Separated</label>
+            </div>
 
+            <div class="form-group--radio">
+                <input type="radio" id="radio-5" name="level0" value="Divorced" aria-controls="radio-5">
+                <label class="form-label form-label-bold  form-label-radio" for="radio-5">Divorced</label>
+            </div>
+
+            <div class="form-group--radio">
+                <input type="radio" id="radio-6" name="level0" value="I prefer not to say" aria-controls="radio-6">
+                <label class="form-label form-label-bold  form-label-radio" for="radio-6">I prefer not to say</label>
+            </div>
+
+        </fieldset>
 
     </div>
     <a href="/forms/phrc/sensitive/question-4" class="btn btn-primary">Continue</a>
