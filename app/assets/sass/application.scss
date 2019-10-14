@@ -261,6 +261,26 @@ html {
     z-index:2;
 }
 
+// ---------------------------------- Header overrides
+.sectionHeader .container-fluid {
+    .header-wrapper {height:auto; margin:10px 0;
+        @media screen and (max-width:768px) { flex-direction:column;
+            
+        }
+        &__logo {
+            a {display: block;}
+        }
+        &__service {font-family: "Montserrat", sans-serif; font-weight:700; max-width:700px;
+            a {line-height: 1.2em;
+                @media screen and (max-width:768px) {
+                    text-align: center; width:100%;
+                }
+            }
+        }
+    }
+}
+
+
 // ---------------------------------- Footer overrides
 footer.main {
     margin-top: 50px;

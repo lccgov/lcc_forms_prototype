@@ -9160,5 +9160,24 @@ html {
 .sectionHeader .container-fluid .header-wrapper .header-logo {
   z-index: 2; }
 
+.sectionHeader .container-fluid .header-wrapper {
+  height: auto;
+  margin: 10px 0; }
+  @media screen and (max-width: 768px) {
+    .sectionHeader .container-fluid .header-wrapper {
+      flex-direction: column; } }
+  .sectionHeader .container-fluid .header-wrapper__logo a {
+    display: block; }
+  .sectionHeader .container-fluid .header-wrapper__service {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    max-width: 700px; }
+    .sectionHeader .container-fluid .header-wrapper__service a {
+      line-height: 1.2em; }
+      @media screen and (max-width: 768px) {
+        .sectionHeader .container-fluid .header-wrapper__service a {
+          text-align: center;
+          width: 100%; } }
+
 footer.main {
   margin-top: 50px; }
