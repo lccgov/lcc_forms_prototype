@@ -13,14 +13,14 @@
 {% endblock %}
 
 {% block service_name %}
-    Gender and Sex
+    Asking for sensitive information
 {% endblock %}
 
 {% block form_progress %}
 {% endblock%}
  
 {% block header %}
-    Your Gender and Sex
+    Gender
 {% endblock%}
 
 {% block sectionOneTop %}
@@ -35,36 +35,43 @@
 {% endblock %}
 
 {% block sectionOneContent %}
+
 <form>
+
     <div class="form-group">
-        <span class="error-message">Choose an answer</span>
 
-        <div class="form-group--radio">
-            <input type="radio" id="radio-1" name="level0" value="Female (including Trans Female)" aria-controls="radio-1">
-            <label class="form-label form-label-bold form-label-large form-label-radio" for="radio-1">Female (including Trans Female)</label>
-        </div>
+        <fieldset>
 
-        <div class="form-group--radio">
-            <input type="radio" id="radio-2" name="level0" value="Male (including Trans Male)" aria-controls="radio-2">
-            <label class="form-label form-label-bold form-label-large form-label-radio" for="radio-2">Male (including Trans Male)</label>
-        </div>
-
-        <div class="form-group--radio">
-            <input type="radio" id="radio-3" name="level0" value="Other" aria-controls="radio-3">
-            <label class="form-label form-label-bold form-label-large form-label-radio" for="radio-3">Other - please write below</label>
-
-            <div class="panel panel-border-narrow js-hidden" id="other-gender">
-                <label class="form-label" for="other-gender">Other </label>
-                <input class="form-control" name="other-gender" type="text" id="other-gender">
+            <p class="form-label form-label-bold">Which gender do you identify with the most? <span class="form-hint">Optional</span></p>
+            <legend class="sr-only">Which gender do you identify with the most?</legend>
+                
+            <div class="form-group--radio">
+                <input type="radio" id="radio-1" name="level0" value="Female (including Trans Female)" aria-controls="radio-1">
+                <label class="form-label form-label-bold form-label-radio" for="radio-1">Female (including Trans Female)</label>
             </div>
-        </div>
-        
-        <div class="form-group--radio">
-            <input type="radio" id="radio-4" name="level0" value="I prefer not to say" aria-controls="radio-4">
-            <label class="form-label form-label-bold form-label-large form-label-radio" for="radio-4">I prefer not to say</label>
-        </div>
+
+            <div class="form-group--radio">
+                <input type="radio" id="radio-2" name="level0" value="Male (including Trans Male)" aria-controls="radio-2">
+                <label class="form-label form-label-bold form-label-radio" for="radio-2">Male (including Trans Male)</label>
+            </div>
+
+            <div class="form-group--radio">
+                <input type="radio" id="radio-3" name="level0" value="Other" aria-controls="radio-3">
+                <label class="form-label form-label-bold form-label-radio" for="radio-3">Other - please write below</label>
+
+                <div class="panel panel-border-narrow js-hidden" id="other-gender">
+                    <label class="form-label" for="other-gender">Other </label>
+                    <input class="form-control" name="other-gender" type="text" id="other-gender">
+                </div>
+            </div>
+            
+            <div class="form-group--radio">
+                <input type="radio" id="radio-4" name="level0" value="I prefer not to say" aria-controls="radio-4">
+                <label class="form-label form-label-bold form-label-radio" for="radio-4">I prefer not to say</label>
+            </div>
+        </fieldset>
     </div>
-    <a href="/forms/phrc/sensitive/question-2" class="btn btn-primary">Continue</a>
+    <a href="/forms/phrc/sensitive/question-2" class="btn btn-primary btn-arrow">Continue</a>
 </form>
 {% endblock %}
 
