@@ -269,7 +269,7 @@ html {
 .sectionHeader .container-fluid {
     .header-wrapper {height:auto; margin:10px 0;
         @media screen and (max-width:768px) { flex-direction:column;
-            
+            align-items: baseline;
         }
         &__logo {
             a {display: block;}
