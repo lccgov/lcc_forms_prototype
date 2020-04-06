@@ -277,7 +277,7 @@ html {
         &__service {font-family: "Montserrat", sans-serif; font-weight:700; max-width:700px;
             a {line-height: 1.2em;
                 @media screen and (max-width:768px) {
-                    text-align: center; width:100%;
+                    text-align: left; width:100%;
                 }
             }
         }
