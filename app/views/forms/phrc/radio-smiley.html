@@ -1,0 +1,88 @@
+{% extends "layout_multi_sections-forms.html" %}
+
+{% block page_title %}
+	What is your position - Leeds City Council
+{% endblock %}
+
+{% block css_register %}
+    <link href="{{ asset_path }}stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block service_start_page %}
+    /forms/phrc/start-page
+{% endblock %}
+
+{% block service_name %}
+    Register to join the Public Health Resource Centre
+{% endblock %}
+
+{% block form_progress %}
+{% endblock%}
+ 
+{% block header %}
+    SENDIASS Page Evaluation
+{% endblock%}
+
+{% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+<a href="/forms/phrc/start-page" class="link-back form-back">Back</a>
+{% endblock %}
+
+
+{% block breadcrumb %}
+{% endblock %}
+
+{% block sectionOneContent %}
+<form>
+    <div class="form-group form-group-inline">
+        <fieldset>
+    
+            <legend class="heading-medium">
+                Have you found this session useful?
+                <span class="form-hint">
+                    Keyboard users can navigate between options using the left and right keys
+                </span>
+            </legend>
+    
+            <div class="form-group-inline">
+                <label class="block-label emoji-angry" for="radio-1" data-target="radio-1">
+                    <input class="sr-only" type="radio" id="radio-1" name="radio-group" value="Not useful" aria-controls="radio-1" aria-expanded="false">
+                    Not useful
+                </label>
+    
+                <label class="block-label emoji-frown" for="radio-2" data-target="radio-2">
+                    <input class="sr-only" type="radio" id="radio-2" name="radio-group" value="Not very useful" aria-controls="radio-2" aria-expanded="false">
+                    Not very useful
+                </label>
+    
+                <label class="block-label emoji-meh" for="radio-3" data-target="radio-3">
+                    <input class="sr-only" type="radio" id="radio-3" name="radio-group" value="Neutral" aria-controls="radio-3" aria-expanded="false">
+                    Neutral
+                </label>
+    
+                <label class="block-label emoji-smile" for="radio-4" data-target="radio-4">
+                    <input class="sr-only" type="radio" id="radio-4" name="radio-group" value="Somewhat useful" aria-controls="radio-4" aria-expanded="false">
+                    Somewhat useful
+                </label>
+    
+                <label class="block-label emoji-laugh" for="radio-5" data-target="radio-5">
+                    <input class="sr-only" type="radio" id="radio-5" name="radio-group" value="Very useful" aria-controls="radio-5" aria-expanded="false">
+                    Very useful
+                </label>
+            </div>
+    
+        </fieldset>
+    </div>
+
+    <button class="btn btn-primary btn-arrow" data-default-fontsize="19" style="font-size: 19px !important;">Continue</button>
+</form>
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+{% endblock %}
+
+  {% block reusablecontent_footer %}
+     {% include "includes/footer-forms.html" %}
+ {% endblock %}
