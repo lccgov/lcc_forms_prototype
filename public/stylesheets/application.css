@@ -1943,6 +1943,11 @@ p + .panel {
     border-color: white !important; }
   .panel.alt a:hover {
     color: white; }
+  .panel.alt .media-container .media-player .control-bar .current-time,
+  .panel.alt .media-container .media-player .control-bar .volume-controls .mute,
+  .panel.alt .media-container .media-player .control-bar .volume-controls .vol-down,
+  .panel.alt .media-container .media-player .control-bar .volume-controls .vol-up {
+    color: #ffffff; }
 
 .panel.img {
   position: relative;
@@ -3012,6 +3017,12 @@ footer.main {
           content: "\f0e0"; }
         .socialBookmarks ul li a.flickr:after {
           content: "\f16e"; }
+
+.container-fluid .Identity-screenName,
+.container-fluid .timeline-Tweet-retweetCredit,
+.container-fluid .timeline-Tweet-timestamp,
+.container-fluid .TwitterCard .SummaryCard-destination {
+  color: #667580; }
 
 .alert {
   padding: 0px;
@@ -5748,6 +5759,11 @@ p + .panel {
     border-color: white !important; }
   .panel.alt a:hover {
     color: white; }
+  .panel.alt .media-container .media-player .control-bar .current-time,
+  .panel.alt .media-container .media-player .control-bar .volume-controls .mute,
+  .panel.alt .media-container .media-player .control-bar .volume-controls .vol-down,
+  .panel.alt .media-container .media-player .control-bar .volume-controls .vol-up {
+    color: #ffffff; }
 
 .panel.img {
   position: relative;
@@ -6817,6 +6833,12 @@ footer.main {
           content: "\f0e0"; }
         .socialBookmarks ul li a.flickr:after {
           content: "\f16e"; }
+
+.container-fluid .Identity-screenName,
+.container-fluid .timeline-Tweet-retweetCredit,
+.container-fluid .timeline-Tweet-timestamp,
+.container-fluid .TwitterCard .SummaryCard-destination {
+  color: #667580; }
 
 .alert {
   padding: 0px;
@@ -9384,14 +9406,23 @@ aside.col-md-4 {
 .ie8 a.search {
   display: none; }
 
+.form-group-inline fieldset {
+  width: 100%; }
+
 .form-group-inline .block-label {
   min-height: 60px;
   padding-left: 60px;
   background-color: #eceff1;
   background-repeat: no-repeat;
-  border-width: 2px; }
-  .form-group-inline .block-label:focus-within, .form-group-inline .block-label.active {
+  border-width: 2px;
+  word-break: break-word; }
+  .form-group-inline .block-label:focus-within {
     border-color: #FFBF47;
+    background-color: #ffffff;
+    outline: none; }
+  .form-group-inline .block-label.active {
+    border-color: #2e7d32;
+    outline: none;
     background-color: #ffffff; }
   .form-group-inline .block-label.emoji-angry {
     background-image: url(../images/angry.png); }
@@ -9418,12 +9449,19 @@ aside.col-md-4 {
     flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: flex-start; }
+    .form-group-inline .form-group-inline {
+      margin-left: -7px; }
     .form-group-inline .block-label {
-      width: calc(20% - 7px);
+      float: none;
+      display: inline-block;
+      vertical-align: top;
+      width: calc(20% - 14px);
       padding-top: 110px;
       padding-left: 10px;
       padding-right: 10px;
+      margin-left: 7px;
+      margin-right: 7px;
       text-align: center; }
       .form-group-inline .block-label.emoji-angry, .form-group-inline .block-label.emoji-frown, .form-group-inline .block-label.emoji-meh, .form-group-inline .block-label.emoji-smile, .form-group-inline .block-label.emoji-laugh {
         background-size: 90px 90px;
